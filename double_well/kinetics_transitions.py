@@ -16,15 +16,9 @@ with open("double_well/traj.txt", "r") as datos:
     #i = 99999
     #j = 3
     #print("Valor de (" + str(i) + "," + str(j) + "): " + str(valores[i][j]))
-    print("max x " + str(max(valores[:][1])))
-    print("max y " + str(max(valores[:][2])))
-    print("max z " + str(max(valores[:][3])))
-    print("min x " + str(min(valores[:][1])))
-    print("min y " + str(min(valores[:][2])))
-    print("min z " + str(min(valores[:][3])))
     #Los intervalos serán de -1 amstrong a 7 amstrings
     n = 1000 #número de intervalos
-    a = -1.0 #límite inferior
+    a = -7.0 #límite inferior
     b = 7.0  #límite superior
     h = (b-a)/n #ancho de los intervalos
     m_x = [0]*n #arreglo para el histograna
