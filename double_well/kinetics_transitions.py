@@ -24,7 +24,13 @@ with open("double_well/traj.txt", "r") as datos:
     m_x = [0]*n #arreglo para el histograna
     m_y = [0]*n
     m_z = [0]*n
-    traj_dis = [[0,0,0]*len(valores)]
+    #Creamos la Matriz para la trayectoria discretizada
+    traj_dis = []
+    for i in range(len(valores)):
+        a = [0]*3
+        traj_dis.append(a)
+
+    #Creación de los histogramas para cada dimensión
     for i in range(n):
         for j in range(len(valores)):
             if valores[j][1] >= a+i*h and valores[j][1] < a+(i+1)*h:
