@@ -1,2 +1,2 @@
-# OpenKTN-Tests
-OpenKTN Tests
+# OpenCTN-Tools
+OpenCTN Tools
