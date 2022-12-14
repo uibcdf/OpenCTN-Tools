@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Trajectory files
-.h5
+*.h5
 
